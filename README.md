@@ -20,3 +20,8 @@ If you start esxtop with the network configuration, it will dump the data of the
 **Pre-requisites**
 * Python 2.7+
 * pexpect module (pip install pexpect)
+
+** How to run **
+* Naviagate to the script directory
+* Run python grab_esxtop_output.py
+* output will be saved under "cpu_and_network_data.txt" in the script's directory itself.
