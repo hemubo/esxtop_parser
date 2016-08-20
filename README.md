@@ -8,7 +8,7 @@ It wont write output to stdout so  shell redirections won’t work.
 * It basically writes to terminal device (/dev/tty (or) /dev/pts)
 * It redraws screen, which means that for every ’n’ seconds you will get the refreshed data. 
 
-Thanks to python and pexpect, through which we can grab tesxtop output while it is in interactive mode.
+Thanks to python and pexpect, through which we can grab esxtop output while it is in interactive mode.
 
 Basically, the logic is that, through python, we are opening a new pseudo terminal device and executing the esxtop command in that terminal.
 Since it esxtop uses “curses” module for self refreshing (redrawing the terminal screen), the generated output has too many terminal control escape characters).
