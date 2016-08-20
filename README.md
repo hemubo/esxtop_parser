@@ -17,3 +17,6 @@ I cleared out all of them through script and made the final copy of the script r
 Also, to avoid typing ’n’ for network, ‘c’ for cpu on esxtop, I generated the configuration files and used it appropriately for esxtop. (using its ‘-c’ option).
 If you start esxtop with the network configuration, it will dump the data of the network only. The same logic is hold good for cpu configuration. For other configurations, goto esxtop interactive mode and type 'h'
 
+**Pre-requisites**
+python 2.7+
+pexpect (pip install pexpect)
