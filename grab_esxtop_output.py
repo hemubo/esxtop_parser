@@ -33,7 +33,9 @@ def cleanoutput(output):
 def main():
     os.environ['TERM'] = 'xterm'
     output, status = pexpect.run("sh ./runcpu.sh", timeout=4, withexitstatus=1)
-    cpuoutput = ""
+    output = output.decode('utf-8')
+    cpuoutput = b""
+    cpuoutput = cpuoutput.decode('utf-8') # python 3 compliance.
     for o in output:
         if o in string.printable:
            cpuoutput += o
@@ -46,7 +48,9 @@ def main():
         f.write(cpuoutput)
         f.write("\n"+'-'*131+"\n")
     output, status = pexpect.run("sh ./runnet.sh", timeout=4, withexitstatus=1)
-    networkoutput = ""
+    output = output.decode('utf-8')
+    networkoutput = b""
+    networkoutput = networkoutput.decode('utf-8')
     for o in output:
         if o in string.printable:
            networkoutput += o
