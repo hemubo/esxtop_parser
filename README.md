@@ -1,5 +1,5 @@
 # esxtop_parser
-Grab the output of interactive esxtop parser.
+Grab the output of interactive esxtop parser..
 
 Most of the articles talks about the esxtop batch mode which results in tonns of column CSV data.
 
